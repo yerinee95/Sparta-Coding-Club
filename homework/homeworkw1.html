@@ -1,40 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shoppingmall</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shoppingmall</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Oxanium&display=swap" rel="stylesheet">
+
+
+
+  <style>
+
+    #carouselExampleControls {
+      width: 600px;
+      height: 400px;
+      margin: auto;
+    }
+
+    .carousel-inner {
+      width: 600px;
+      height: 400px;
+      margin: auto;
+      padding-left: 50px;
+    }
+
+    form {
+      width: 600px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .jumbotron {
+      width: 600px;
+      height: 300px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .display-4 {
+      font-family: 'Oxanium', cursive;
+    }
+
+    .lead {
+      font-family: 'Do Hyeon', sans-serif;
+    }
+
+    h5 {
+      font-family: 'Do Hyeon', sans-serif;
+    }
+
+    .press {
+      width: 180px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+  </style>
+
 </head>
+
 <body>
-    <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Example select</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect2">Example multiple select</label>
-          <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-      </form>
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="http://admin.abko.co.kr/data/item/539/2586311539_500_3.jpg" class="d-block w-600px" alt="slide">
+      </div>
+      <div class="carousel-item">
+        <img src="http://admin.abko.co.kr/data/item/539/2586311539_500_2.jpg" class="d-block w-600px" alt="slide">
+      </div>
+      <div class="carousel-item">
+        <img src="http://admin.abko.co.kr/data/item/539/2586311539_500_1.jpg" class="d-block w-600px" alt="slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h3 class="display-4">ABKO Hacker K640</h3>
+      <h5>가격: 45000원 </h5>
+      <p class="lead">코딩 꿈나무 당신을 위한 키보드! 반짝반짝 비주얼과 사각사각 오디오의 완벽한 조화가 당신을 신나는 코딩의 세계로 이끌 것입니다. 판매자가 최근 남친 선물하려고 찾아보다가 본인이 눈독 들이고 있는 아이템. </p>
+    </div>
+  </div>
+
+  <form>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">성함</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default" placeholder="주문자 성함을 적어주세요">
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">수량</label>
+      </div>
+      <select class="custom-select" id="inputGroupSelect01">
+        <option selected>수량을 선택해주세요</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="3">4</option>
+      </select>
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default" placeholder="배송지 주소를 입력해주세요">
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default" placeholder="숫자만 적어주세요">
+    </div>
+
+  </form>
+<div class="press">
+  <button type="button" class="btn btn-primary btn-lg">주문하기</button>
+</div>
+
 </body>
+
 </html>
